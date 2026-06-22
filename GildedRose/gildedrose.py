@@ -73,18 +73,18 @@ class Conjurado:
 class GildedRose:
     def __init__(self, itens: list[Item]):
         self.itens = itens
-        self.itemComum = ItemComum
-        self.agedBrie = AgedBrie
-        self.sulfuras = Sulfuras
-        self.backstagePasses = BackstagePasses
-        self.conjurado = Conjurado
+        self.itemComum = ItemComum()
+        self.agedBrie = AgedBrie()
+        self.sulfuras = Sulfuras()
+        self.backstagePasses = BackstagePasses()
+        self.conjurado = Conjurado()
 
-    def atualiza_itens(self, item):
+    def atualiza_itens(self):
         for item in self.itens:
             if item.nome == "Aged Brie":
                 self.agedBrie.agedBrie_excecoes(item)
             
-            elif item.nome == "Sulfuras":
+            elif item.nome == "Sulfuras" or item.nome == "Sulfuras vencido":
                 self.sulfuras.sulfuras_excecoes(item)
             
             elif item.nome == "Backstage passes":
