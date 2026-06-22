@@ -98,10 +98,6 @@ class GildedRose:
             escolhas.escolhe_item()
             
 
-# Code Smells
-# Magic Number: Número "solto" no código sem explicação, por exemplo "<50", ">0", "<6", "+1"
-# Long Parameter List: Função com muitos parâmetros
-
 if __name__ == "__main__":
     itens = [
         Item("Espada normal", validade=10, qualidade=20),
