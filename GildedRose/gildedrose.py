@@ -42,7 +42,7 @@ class ItemComum:
         
         Returns:
             O item atualizado, alterando a validade e a qualidade.
-            Item comum tem a validade dimunuída todos os dias, e quando a validade está vencida(<0) tem a qualidade diminuida em -2, e quando a validade é maior que 0 a qualidade é aumentada em +1.
+            Item comum tem a validade dimunuída todos os dias, e quando a validade está vencida(<0) tem a qualidade diminuida em -2, e quando a validade é maior que 0 a qualidade é diminuida em -1.
             A qualidade nunca é negativa e nem maior que 50.
         """
         item.validade -= 1
